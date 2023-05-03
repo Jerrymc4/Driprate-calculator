@@ -1,0 +1,111 @@
+/* NAV STYLES */
+
+#nav {
+    width: 100vw;
+    height: 80px;
+    border: none;
+    box-shadow: 8px 0px 15px var(--color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+.nav__logo__content {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+/* NAV STYLES END */
+
+
+/* CALCULATOR STYLES */
+
+.calc__container {
+    position: fixed;
+    /* height: 400px; */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 460px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px var(--color-light);
+    border: 1px solid var(--color-light);
+    transition: var(--transition);
+}
+
+.calc__container:hover {
+    box-shadow: 20px 20px 40px var(--color-light);
+}
+
+.calculator {}
+
+input {
+    width: 5rem;
+    border: none;
+    position: absolute;
+    right: 40px;
+    margin-top: -5px;
+    font-size: 1.25rem;
+}
+
+.calc__container hr {
+    height: 0px;
+    width: 100%;
+    border: 0.5px solid var(--color-light);
+}
+
+.calc__container button {
+    background-color: var(--color-black);
+    border: 1px solid var(--color-black);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--color-white);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: var(--transition);
+    /* position: absolute;
+    left: 28%;
+    bottom: 20px; */
+}
+
+.calc__container button:hover {
+    background-color: var(--color-black);
+    border: 1px solid var(--color-black);
+    box-shadow: 20px 20px 40px var(--color-light);
+}
+
+
+/* CALC INFO */
+
+.calc__description__container {
+    width: 580px;
+    margin-left: 540px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formula {
+    padding: 20px;
+    background-color: var(--color-light);
+    border-radius: 10px;
+    width: fit-content;
+}

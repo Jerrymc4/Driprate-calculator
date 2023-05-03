@@ -1,0 +1,151 @@
+/* NAV STYLES */
+
+#nav {
+    width: 100vw;
+    height: 80px;
+    border: none;
+    box-shadow: 8px 0px 15px var(--color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+.nav__logo__content {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+/* NAV STYLES END */
+
+.nav__logo__content {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+/* NAV STYLES END */
+
+
+/* CALCULATOR STYLES */
+
+.burn__calc__container {
+    width: 45%;
+    height: 700px;
+    display: flex;
+}
+
+.burn__calculator {
+    /* position: fixed; */
+    /* top: 130px; */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px var(--color-light);
+    border: 1px solid var(--color-light);
+    transition: var(--transition);
+}
+
+.burn__calculator:hover {
+    box-shadow: 20px 20px 40px var(--color-light);
+}
+
+input {
+    width: 2rem;
+    font-size: 1.2rem;
+    border: none;
+    margin-left: 17rem;
+}
+
+select {
+    /* width: var(--select-size); */
+    border: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#submit-burn {
+    width: 100%;
+}
+
+option {
+    width: max-content;
+    /* margin-left: 20px; */
+    border: 1px solid black;
+}
+
+.burn__calculator hr {
+    height: 0px;
+    width: 100%;
+    border: 0.5px solid var(--color-light);
+}
+
+.burn__calculator button {
+    background-color: var(--color-black);
+    border: 1px solid var(--color-black);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--color-white);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: var(--transition);
+    /* position: absolute;
+    left: 28%;
+    bottom: 20px; */
+}
+
+.burn__calculator button:hover {
+    background-color: var(--color-black);
+    border: 1px solid var(--color-black);
+    box-shadow: 20px 20px 40px var(--color-light);
+}
+
+
+/* CALC INFO */
+
+.burn__description__container {
+    width: 580px;
+    margin-left: 540px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formula {
+    padding: 20px;
+    background-color: var(--color-light);
+    border-radius: 10px;
+    width: fit-content;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="vendor.js" defer></script>
+    <script src="calc.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>MED calc</title>
+  </head>
+
+  <body>
+    <nav id="nav">
+      <div class="nav__logo__content">
+        <div class="logo__container">
+          <h1><span class="logo">MED</span> calculator</h1>
+        </div>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="calc__container">
+        <div class="calculator" id="drip-rate">
+          <p>
+            Volume <input type="text" id="volume" placeholder="ml" required />
+          </p>
+          <hr />
+          <br />
+          <br />
+          Drop Set
+          <input type="text" id="gtts" placeholder="gtts/ml" required />
+          <hr />
+          <br />
+          <br />
+          Time
+          <input type="text" id="time" placeholder="min" required />
+          <hr class="margin__sm" />
+        </div>
+        <p id="result" class="margin__sm bold"></p>
+        <p id="reduced" class="margin__sm bold"></p>
+        <button id="submit">submit</button>
+      </div>
+
+      <section class="calc__description__container">
+        <h1 class="primary margin__lg">Drops Per Minute Calculator</h1>
+        <h2 class="heading__info margin__sm">Table Of Contents</h2>
+        <ul class="indent list margin__sm">
+          <li>
+            <a href="#how-to-use" class="link"
+              >How to use the Drip Rate Calculator</a
+            >
+          </li>
+          <li>
+            <a href="#how-to-calc-min" class="link"
+              >How to calculate drops per minute?</a
+            >
+          </li>
+          <li>
+            <a href="#how-to-calc-factor" class="link"
+              >How to find drop factor?</a
+            >
+          </li>
+        </ul>
+        <article>
+          <p class="margin__lg">
+            This drops per minute calculator allows you to calculate the number
+            of drops per minute
+            <span class="primary bold"
+              >needed for a given intravenous therapy</span
+            >. This tool comes as handy in all types of drip calculations: we'll
+            help you find the volume, time, and the drop factor value.
+          </p>
+        </article>
+        <article>
+          <p class="margin__sm">
+            Take a look below to discover the
+            <span class="primary bold"
+              >factor equation, ggts per minute formula</span
+            >
+            and tips on how to calculate the drip rate per minute or hour. 💧
+          </p>
+        </article>
+        <h1 class="heading__info" id="how-to-use">
+          How to use the drops per minute calculator?
+        </h1>
+        <article>
+          <p class="margin__lg">
+            To calculate the flow rate in drops per minute, you'll need to input
+            the following data:
+          </p>
+          <ol class="indent margin__sm">
+            <li>The volume of the desired infusion.</li>
+            <li>
+              The planned <span class="primary bold">time</span> of the
+              infusion.
+            </li>
+            <li>
+              The <span class="primary bold">drop factor</span> - number of
+              guttae (drops) for every unit (ml in this case) of solution.
+            </li>
+            <li><span class="primary bold">Thats it!</span></li>
+          </ol>
+          <h1 class="heading__info">How to calculate drops per minute?</h1>
+          <p class="margin__sm">
+            It's not as difficult as it seems! Try the following drops per
+            minute formula:
+          </p>
+          <p class="formula margin__sm" id="how-to-calc-min">
+            Drops per minute = (Volume * Drop factor) / (Time)
+          </p>
+          <div class="formula-info">
+            <p class="margin__sm">
+              The drops per minute formula uses the metric system.
+            </p>
+            <ul class="indent margin__lg">
+              <li>
+                Volume should be given in
+                <span class="primary bold">milliliters</span> (mL).
+              </li>
+              <li>
+                <span class="primary bold">Drop factor</span> uses the unit of
+                gtts/drops per minute (Usually specified on packaging).
+              </li>
+              <li>
+                Time must be given in <span class="bold primary">minutes</span>.
+              </li>
+            </ul>
+          </div>
+          <h1 class="heading__info" id="how-to-calc-factor">
+            How to find drop factor?
+          </h1>
+          <p class="margin__sm">
+            The value of <span class="primary bold">drop factor</span> should be
+            printed on the package of the IV set of your choice. Different
+            solutions have different properties and use various drip factor
+            formulas.
+          </p>
+        </article>
+      </section>
+    </section>
+  </body>
+</html>

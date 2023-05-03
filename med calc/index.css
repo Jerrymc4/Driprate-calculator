@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    /* list-style: none; */
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --color-white: #fff;
+    --color-light: #d9d9d9;
+    --color-gray: #68686f;
+    --color-primary: #ff2e2e;
+    --color-black: #1e1e1e;
+    --transition: all 300ms ease;
+    /* CONTAINER SIZES */
+    --container-lg: 90%;
+    --container-md: 86%;
+    --container-sm: 90%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    /* display: none; */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-gray);
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    font-family: "Audiowide", cursive;
+    font-family: "Monoton", cursive;
+    color: var(--color-gray);
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    height: fit-content;
+}
+
+.container {
+    width: var(--container-lg);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.black {
+    color: var(--color-black);
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.link {
+    color: var(--color-gray);
+    font-size: 1.2rem;
+}
+
+.link-nav {
+    color: var(--color-gray);
+    font-size: 1.2rem;
+}
+
+.link-nav:hover {
+    color: #ff2e2e;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* padding: 20px; */
+    width: 100%;
+    border-bottom: 1px solid var(--color-light);
+    /* height: 30px; */
+}
+
+.indent {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.margin__xs {
+    margin-bottom: 0.5rem;
+}
+
+.margin__sm {
+    margin-bottom: 2rem;
+}
+
+.margin__lg {
+    margin-bottom: 3.25rem;
+}
+
+.heading__info {
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    color: var(--color-black);
+}
+
+.link:hover {
+    color: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
